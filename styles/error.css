@@ -1,0 +1,11 @@
+.error-404 {
+  text-align: center;
+  align-items: center;
+  padding: 20%;
+  max-width: 80%;
+}
+
+.error-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
