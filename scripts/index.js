@@ -25,10 +25,8 @@ function recordResponse(choice) {
 // Compute the approval rating
 function computeRating(data) {
   let totalVoteCount = data.yesCount + data.noCount;
-  return {
-    rating: (data.yesCount / totalVoteCount * 100).toFixed(2),
-    totalVoteCount: totalVoteCount
-  };
+  let rating = (data.yesCount / totalVoteCount * 100).toFixed(2);
+  return { rating, totalVoteCount };
 }
 
 buttonYes.addEventListener("click", _ => {
