@@ -8,68 +8,75 @@ main {
 
 .intro-section, .question-section {
   flex-grow: 1;
-  padding: 20px;
+  padding: 3vh;
   box-sizing: border-box;
 }
 
 .avatar-container {
   display: block;
-  margin: 50px 0;
+  margin: 5vh 0 4vh 0;
   text-align: center;
 }
 
 .avatar {
-  width: 200px;
-  height: 200px;
+  width: 20vh;
+  height: 20vh;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #fff;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  border: 0.4vh solid #ddd;
+  box-shadow: 0.5vh 0.5vh 2.2vh rgba(0, 0, 0, 0.5);
 }
 
 .greeting {
   text-align: center;
-  font-size: 3.5rem;
-  text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 1.2vh 1.2vh 2.2vh rgba(0, 0, 0, 0.5);
 }
 
 .sub-line {
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.5);
 }
 
 .question {
   text-align: center;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.5);
 }
 
 .question-section button {
-  margin: auto;
-  padding: 6px 14px;
-  border-radius: 4px;
+  margin: 1vw;
+  padding: 1.2vh 2.6vh;
+  border-radius: 2vh;
   border: none;
-  font-size: 1.25rem;
   cursor: pointer;
   text-transform: uppercase;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0.5vh 0.5vh 1.1vh rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease;
+  background-color: #ddd;
 }
 
-.question-section button:focus {
+.question-section button:hover {
   outline: none;
+  background-color: #aaa;
 }
 
 .question-section #button-yes {
-  color: green;
+  color: #306844;
 }
 
 .question-section #button-no {
-  color: red;
+  color: #d92323;
+}
+
+.question-section #button-yes:hover {
+  color: #306844de;
+}
+
+.question-section #button-no:hover {
+  color: #d92323e2;
 }
 
 .response {
-  margin: 20px;
+  margin: 2vh;
   text-align: center;
-  font-size: 1.25rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.3);
 }

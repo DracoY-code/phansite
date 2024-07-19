@@ -1,18 +1,18 @@
 header {
-  background: #000;
-  color: #fff;
-  padding: 10px 0;
+  background: #111;
+  color: #ddd;
+  padding: 1vh 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   overflow: auto;
+  box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.5);
 }
 
 .navbar {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-brand {
@@ -21,8 +21,8 @@ header {
   font-size: 1.5rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
-  margin: 0 10px;
+  color: #ddd;
+  margin: 0 2vh;
   white-space: nowrap;
   flex-wrap: wrap;
 }
@@ -37,45 +37,28 @@ header {
 }
 
 .nav-item {
-  margin: 0 10px;
-  font-size: 1.1rem;
+  margin: 0 1vw;
+  font-size: 1rem;
 }
 
 .nav-link {
   text-decoration: none;
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 4px;
+  color: #ddd;
+  padding: 0.8vh 1.2vh;
+  border-radius: 0.4vh;
 }
 
 .nav-link:hover {
   background-color: #f0f0f0;
-  color: #000;
+  color: #111;
 }
 
-.search-bar {
-  margin: 0 30px;
-  flex-grow: 1;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.search-bar input {
-  padding: 2px 4px;
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  margin: -20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-}
-
-.search-bar button {
-  padding: 4px 8px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  margin: 0 10px 0 0;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+@media only screen and (min-width: 600px) {
+  .navbar-brand {
+    font-size: 1.75rem;
+  }
+  
+  .nav-item {
+    font-size: 1.25rem;
+  }
 }
