@@ -8,7 +8,7 @@ main {
 
 .intro-section, .question-section {
   flex-grow: 1;
-  padding: 3vh;
+  padding: 1.5vh;
   box-sizing: border-box;
 }
 
